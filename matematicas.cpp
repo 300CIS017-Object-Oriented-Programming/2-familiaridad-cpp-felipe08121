@@ -18,7 +18,8 @@ int restar(int num1, int num2)
         temp = num1;
         num1 = num2;
         num2 = temp;
-        return num1 - num2;
+        return num1 - num2; // Se puede resolver mas facil usando el return num2 - num1,
+        //se realizo el cambio con una variable temporal como practica.
     }
     // Se implemento el cambio de orden.
 }
@@ -68,4 +69,16 @@ int potencia( int base, int exponente ) {
     }
 
     return resultado;
+}
+
+int encontrarMaximo( int arreglo[], int tamano ) {
+
+    int max = -10000;
+
+    for (int i = 0; i < tamano; i++ ) {
+        if ( arreglo[i] > max ) {
+            max = arreglo[i];
+        }
+    }
+    return max;
 }

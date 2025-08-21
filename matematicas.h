@@ -24,6 +24,7 @@ int factorial( int numero );
 
 int potencia( int base, int exponente );
 
+int encontrarMaximo( int arreglo[], int tamano );
 // TODO
 
 

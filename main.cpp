@@ -92,6 +92,19 @@ void tercera_actividad_resta()
 }
 
 
+void cuarta_actividad() {
+    int edad;
+    int arreglo[10] = { 23, 12, 55, 555, 1024, 21, 1 ,2 ,3 ,33 };
+    encontrarMaximo( arreglo, 10 );
+    std::cout << "Por favor ingrese su edad: ";
+    std::cin >> edad;
+    std::cin.clear();
+    int max;
+    max = encontrarMaximo( arreglo, 10 );
+    std::cin.ignore(10000, '\n' );
+    std::cout << "Su edad es: " << edad << " y " << "el maximo valor del arreglo es: " << max <<
+        " y la suma de su edad con el valor maximo del arreglo es: " << max+edad << '\n';
+}
 
 void probarArreglos()
 {
@@ -118,9 +131,11 @@ int main()
         std::cout << "2. Resta. \n";
         std::cout << "3. Factorial. \n";
         std::cout << "4. Potencia. \n";
-        std::cout << "5. Salir. \n";
+        std::cout << "5. Encontrar el numero maximo de un arreglo. \n";
+        std::cout << "-1. Salir. \n";
         std::cout <<"Seleccione una opcion: ";
         std::cin >> opcion;
+        std::cin.clear();
         switch (opcion) {
             case 1:
                 tercera_actividad_suma();
@@ -135,13 +150,16 @@ int main()
                 segunda_actividad();
                 break;
             case 5:
+                cuarta_actividad();
+                break;
+            case -1:
                 std::cout << "Saliendo del programa....\n";
                 break;
             default:
-                std::cout << "Opcion incorrecto.\n";
+                std::cout << "La opcion seleccionada no esta disponible.\n";
                 break;
         }
     }
-    while ( opcion != 5); // El menu funciona.
+    while ( opcion != -1); // El menu funciona.
     return 0;
 }
