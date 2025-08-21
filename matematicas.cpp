@@ -41,3 +41,12 @@ void mostrarArreglo(int arreglo[], int tamano)
         std::cout << arreglo[i] << " "; // Muestra el elemento en la posición i})
     }
 }
+
+int factorial( int numero ) {
+
+    int factorial = 1;
+    for ( int i = 1; i <= numero; i++) {
+        factorial *=  i;
+    }
+    return factorial;
+}

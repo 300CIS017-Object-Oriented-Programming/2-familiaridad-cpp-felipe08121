@@ -21,6 +21,21 @@ void probarMatematicas()
 
     std::cout << "Suma: " << resultado_suma << std::endl;
     std::cout << "Resta: " << resultado_resta << std::endl;
+
+
+
+}
+
+void primera_actividad() {
+    int num3;
+    std::cout << "Ingrese el numero al cual le desea sacar el factorial: ";
+    std:: cin >> num3;
+    std::cin.clear();
+    std::cin.ignore(10000, '\n');
+
+    int resultado_factorial = factorial(num3); // Funciona
+
+    std::cout << "Fatorial de " << num3 << "! " << "es: " << resultado_factorial << '\n';
 }
 
 void probarArreglos()
@@ -37,7 +52,8 @@ void probarArreglos()
 
 int main()
 {
-    probarMatematicas();
-    probarArreglos();
+    //probarMatematicas();
+    //probarArreglos();
+    primera_actividad();
     return 0;
 }

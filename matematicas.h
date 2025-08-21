@@ -20,6 +20,8 @@ int sumarPares(int arreglo[], int tamano);
 
 void mostrarArreglo(int arreglo[], int tamano);
 
+int factorial( int numero );
+
 
 // TODO
 
