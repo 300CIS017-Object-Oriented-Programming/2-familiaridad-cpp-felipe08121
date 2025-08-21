@@ -38,6 +38,23 @@ void primera_actividad() {
     std::cout << "Fatorial de " << num3 << "! " << "es: " << resultado_factorial << '\n';
 }
 
+void  segunda_actividad() {
+    int num4;
+    std::cout << "Ingrese el numero el cual sera la base: ";
+    std:: cin >> num4;
+    std::cin.clear();
+    std::cin.ignore(10000, '\n');
+    int num5;
+    std::cout << "Ingrese el numero el cual sera exponente: ";
+    std:: cin >> num5;
+    std::cin.clear();
+    std::cin.ignore(10000, '\n');
+
+    int resultado_potencia = potencia( num4, num5 );
+
+    std::cout << "la potencia, con base " << num4 << " y " << " exponente " << num5 << ", es: " << resultado_potencia << '\n';
+}
+
 void probarArreglos()
 {
     int cantElementos = 10;
@@ -54,6 +71,7 @@ int main()
 {
     //probarMatematicas();
     //probarArreglos();
-    primera_actividad();
+    //primera_actividad();
+    segunda_actividad();
     return 0;
 }

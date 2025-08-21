@@ -50,3 +50,12 @@ int factorial( int numero ) {
     }
     return factorial;
 }
+
+int potencia( int base, int exponente ) {
+    int resultado = 1;
+    for ( int i = 1; i <= exponente; i++ ) {
+        resultado *= base;
+    }
+
+    return resultado;
+}

@@ -22,6 +22,7 @@ void mostrarArreglo(int arreglo[], int tamano);
 
 int factorial( int numero );
 
+int potencia( int base, int exponente );
 
 // TODO
 
