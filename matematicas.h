@@ -20,7 +20,11 @@ int sumarPares(int arreglo[], int tamano);
 
 void mostrarArreglo(int arreglo[], int tamano);
 
+int factorial( int numero );
 
+int potencia( int base, int exponente );
+
+int encontrarMaximo( int arreglo[], int tamano );
 // TODO
 
 
